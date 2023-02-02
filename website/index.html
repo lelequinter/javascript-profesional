@@ -24,28 +24,6 @@
     </main>
 
     <!-- <script type="module" src="/assets/index.ts"></script> -->
-    <script>
-      const video = document.querySelector("video");
-      const buttonPlay = document.getElementById("playButton");
-      let playPause = false;
-
-      function MediaPlayer(config) {
-        this.video = config.el;
-      }
-
-      MediaPlayer.prototype.playPause = function () {
-
-        playPause 
-        ? this.video.play()
-        :  this.video.pause();
-        
-      };
-
-      const player = new MediaPlayer({ el: video });
-      buttonPlay.onclick = () =>{ 
-        playPause = !playPause;
-        player.playPause()
-      };
-    </script>
+    <script src="assets/index.js" ></script>
   </body>
 </html>
